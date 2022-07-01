@@ -7,28 +7,20 @@
 918 -> 1
 */
 
-
-
-
-int CutNumber()  // метод который возвращает
+int CutNumber()  
 {
-    int num = new Random().Next(10,1000);   // -даст случайное целое число от (min до max-1)
-    Console.WriteLine("Current random number is " + num);  // - вывод числа в терминал
-    int ten = num % 100;  //456
+    int num = new Random().Next(100,1000);   
+    Console.WriteLine("Current random number is " + num);  
+
+    int ten = num % 100;  
     int ed = ten / 10;
 
-    //int sotni = num / 100;  // удалить цифру 456 / 100 -> 4 (4.56 ,где 4 -целое число)
-    //int ed = num % 10;      // удалить цифру456 % 10 -> 6   (45.6 ,где 6 -(%) остаток от деления)
-
-    //int result = sotni * 10 + ed;
     int result = ed;
-    return result;           // возврат 
+    return result;          
 }
 
-int number = CutNumber();   //-для зпуска int метода CutNumber -имя метода
-Console.WriteLine("Result number is " + number);  //-для выдочи результата в терминал int CutNumber метода
-
-
+int number = CutNumber();   
+Console.WriteLine("Result number is " + number);  
 
 
 /*
@@ -44,8 +36,30 @@ Console.WriteLine("Result number is " + number);  //-для выдочи рез�
 /*
 Задача 15: Напишите программу, которая принимает на вход цифру, 
 обозначающую день недели, и проверяет, является ли этот день выходным.
-
 6 -> да
 7 -> да
 1 -> нет
 */
+void DayWeek (int number)
+{
+   if(number == 1) Console.WriteLine(number + " -> Да");
+
+   if(number == 2) Console.WriteLine(number + " -> Да");
+
+   if(number == 3) Console.WriteLine(number + " -> Да");
+
+   if(number == 4) Console.WriteLine(number + " -> Да");
+
+   if(number == 5) Console.WriteLine(number + " -> Да");
+
+   if(number == 6) Console.WriteLine(number + " -> Да");
+
+   if(number == 7) Console.WriteLine(number + " -> Да");
+
+   if(number > 7 || number < 1) Console.WriteLine(number + " -> Нет");
+
+}
+
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+DayWeek(num);
