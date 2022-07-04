@@ -29,11 +29,6 @@ Console.WriteLine("Вторая цифра случайного числа " + n
 32679 -> 6
 */
 
-int GenNum() 
-{
-    return new Random().Next();
-}
-
 int[] GetArray(int num) 
 {
 
@@ -61,9 +56,9 @@ int GetThirdDigit(int[] arr)
     return arr[2];
 }
 
-int n = GenNum();
-Console.WriteLine(n);
-Console.WriteLine(GetThirdDigit(GetArray(n)));
+int n = new Random().Next();
+Console.WriteLine("Случайное число -> " + n);
+Console.WriteLine("Третья цифра -> " + GetThirdDigit(GetArray(n)));
 
 /*
 Задача 15: Напишите программу, которая принимает на вход цифру, 
