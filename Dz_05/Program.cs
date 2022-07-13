@@ -51,7 +51,7 @@ void PrintArray(int[] col)
     Console.Write("]");
     Console.WriteLine();
 }
-// Решениезадача 34:
+// Решение задача 34:
 int quantityEvenNumbers(int[] newArray)
 {
     int count = 0;
