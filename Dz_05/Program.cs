@@ -51,19 +51,50 @@ void PrintArray(int[] col)
     Console.Write("]");
     Console.WriteLine();
 }
+
 // Решение задача 34:
+/*
 int quantityEvenNumbers(int[] newArray)
 {
     int count = 0;
     
     for(int i = 0; i < newArray.Length; i++)
     {
-        if(newArray[i] % 2 == 0) 
-        {
-            count++;
-        }
+        if(newArray[i] % 2 == 0) count++;
     }
-    return  count;
+    return count;
+}
+*/
+
+// Решение задачи 36
+/*
+int sumElementsOddPositions(int[] newArray)
+{
+    int sum = 0;
+    
+    for(int i = 1; i < newArray.Length; i=i+2)
+    {
+        if(newArray[i] % 2 == 1)
+        sum = sum + newArray[i];
+    }
+    return  sum;
+}
+*/
+
+// Решение задача 36:
+int differenceBetweenMaxAndMinElements(int[] newArray)
+{
+    int difference = 0;
+    int max = 0;
+    int min = 0;
+
+    for(int i = 1; i < newArray.Length; i++)
+    {
+        if(newArray[i] > newArray[max]) max = i;
+        if(newArray[i] < newArray[min]) min = i;
+    }
+    difference = newArray[max] - newArray[min];
+    return  difference ;
 }
 
 Console.Write("Введите размер массива: ");
@@ -75,4 +106,9 @@ int max = Convert.ToInt32(Console.ReadLine());
 
 int [] array = CreateRandomArray(size, min, max);    
 PrintArray(array);                             
-Console.WriteLine("количество чётных чисел в массиве = " + quantityEvenNumbers(array));
+//Console.WriteLine("количество чётных чисел в массиве = " + quantityEvenNumbers(array));                  // Решение задача 34
+//Console.WriteLine("сумму элементов, стоящих на нечётных позициях = " + sumElementsOddPositions(array));  // Решение задачи 36
+Console.WriteLine("разницу между максимальным и минимальным элементов массива = " 
++ differenceBetweenMaxAndMinElements(array));                                                              // Решение задача 36:
+  
+// Я наверное с именами перемудрил?
