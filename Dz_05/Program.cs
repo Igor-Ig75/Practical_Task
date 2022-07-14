@@ -53,7 +53,7 @@ void PrintArray(int[] col)
 }
 
 // Решение задача 34:
-/*
+
 int quantityEvenNumbers(int[] newArray)
 {
     int count = 0;
@@ -64,10 +64,10 @@ int quantityEvenNumbers(int[] newArray)
     }
     return count;
 }
-*/
+
 
 // Решение задачи 36
-/*
+
 int sumElementsOddPositions(int[] newArray)
 {
     int sum = 0;
@@ -79,9 +79,9 @@ int sumElementsOddPositions(int[] newArray)
     }
     return  sum;
 }
-*/
 
-// Решение задача 36:
+
+// Решение задача 38:
 int differenceBetweenMaxAndMinElements(int[] newArray)
 {
     int difference = 0;
@@ -109,6 +109,6 @@ PrintArray(array);
 //Console.WriteLine("количество чётных чисел в массиве = " + quantityEvenNumbers(array));                  // Решение задача 34
 //Console.WriteLine("сумму элементов, стоящих на нечётных позициях = " + sumElementsOddPositions(array));  // Решение задачи 36
 Console.WriteLine("разницу между максимальным и минимальным элементов массива = " 
-+ differenceBetweenMaxAndMinElements(array));                                                              // Решение задача 36:
++ differenceBetweenMaxAndMinElements(array));                                                              // Решение задача 38:
   
 // Я наверное с именами перемудрил?
