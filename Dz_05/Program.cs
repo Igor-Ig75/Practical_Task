@@ -97,6 +97,7 @@ int differenceBetweenMaxAndMinElements(int[] newArray)
     return  difference ;
 }
 
+/*
 Console.Write("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите минимально возможное значения элементов ");
@@ -104,11 +105,16 @@ int min = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите максимально возможное значение элементов ");
 int max = Convert.ToInt32(Console.ReadLine());
 
-int [] array = CreateRandomArray(size, min, max);    
-PrintArray(array);                             
-//Console.WriteLine("количество чётных чисел в массиве = " + quantityEvenNumbers(array));                  // Решение задача 34
-//Console.WriteLine("сумму элементов, стоящих на нечётных позициях = " + sumElementsOddPositions(array));  // Решение задачи 36
-Console.WriteLine("разницу между максимальным и минимальным элементов массива = " 
-+ differenceBetweenMaxAndMinElements(array));                                                              // Решение задача 38:
+int [] array = CreateRandomArray(size, min, max);   
+PrintArray(array);  */
+
+int[] array1 = CreateRandomArray(4, 100, 1000);                                                             // Решение задача 34_1вариант
+PrintArray(array1);                                                                                         // Решение задача 34_1вариант
+
+Console.WriteLine("Количество чётных чисел в массиве = " + quantityEvenNumbers(array1));                    // Решение задача 34_1вариант
+//Console.WriteLine("количество чётных чисел в массиве = " + quantityEvenNumbers(array));                   // Решение задача 34_2вариант
+//Console.WriteLine("сумму элементов, стоящих на нечётных позициях = " + sumElementsOddPositions(array));   // Решение задачи 36
+//Console.WriteLine("разницу между максимальным и минимальным элементов массива = " 
+//+ differenceBetweenMaxAndMinElements(array));                                                             // Решение задача 38:
   
 // Я наверное с именами перемудрил?
