@@ -53,7 +53,6 @@ int[] newArray = new int[m];
 Numbers(newArray);              
 Console.WriteLine($"Количество  чисел больше 0 = {quantityNumbers(newArray)}");     
 
-
 //================================Решение задача 43===================================================
 
 Console.Write("Введите b1 = ");
