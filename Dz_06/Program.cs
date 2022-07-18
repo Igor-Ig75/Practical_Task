@@ -9,6 +9,7 @@
 b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 */
 
+// Решение задача 41:
 
 void Numbers(int[] newArray)
 {
@@ -19,7 +20,6 @@ void Numbers(int[] newArray)
     }
 }
 
-// Решение задача 41:
 
 int quantityNumbers(int[] newArray)
 {
@@ -44,15 +44,15 @@ void Urovnenie(double b1, double k1, double b2, double k2)
 }
 
 //================================Решение задача 41===================================================
-/*
+
 Console.Clear();
 Console.Write($"Введи количество чисел: ");
 int m = Convert.ToInt32(Console.ReadLine());
 int[] newArray = new int[m];
 
 Numbers(newArray);              
-Console.WriteLine($"Количество  чисел больше 0 = {quantityNumbers(newArray)}");     // Решение задача 41: 
-*/
+Console.WriteLine($"Количество  чисел больше 0 = {quantityNumbers(newArray)}");     
+
 
 //================================Решение задача 43===================================================
 
