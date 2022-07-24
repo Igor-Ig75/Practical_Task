@@ -39,7 +39,7 @@ void SelectionSort(int[,] array)
     for(int i = 0; i < array.GetLength(0); i++)
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            for (int c = 1;  c < array.GetLength(1); c++)           // блок код ищит только минимальный элемент
+            for (int c = 1;  c < array.GetLength(1); c++)           
             {
                 if(array[i, c] < array[i, c-1]) 
                 {
